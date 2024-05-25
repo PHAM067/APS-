@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/video.css">
+
+    <title>Video explicativo</title>
+</head>
+
+<body class="gradient">
+    <header>
+        <div class="navbar">
+            <div class="logo"><img src="assets/img/logo.png" alt="">
+            </div>
+            <ul class="links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="aps2.html">Sobre Nós</a></li>
+                <li><a href="indexservicos.html">Serviços</a></li>
+                <li><a href="sobreogrupo.html">Sobre o Grupo</a></li>
+                <li><a href="videoaps.html">Vídeo</a></li>
+            </ul>
+            <a href="contato_aps.html" class="action_btn">Comentários</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="dropdown_menu">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="aps2.html">Sobre Nós</a></li>
+            <li><a href="indexservicos.html">Serviços</a></li>
+            <li><a href="sobreogrupo.html">Sobre o Grupo</a></li>
+            <li><a href="videoaps.html">Vídeo</a></li>
+            <li> <a href="contato_aps.html" class="action_btn">Comentários</a></li>
+
+        </div>
+    </header>
+    <div class="vd">
+        <iframe class="video" src="https://www.youtube.com/embed/hGF7VHQ9F7w?si=OxZoldnYySUlsOCY"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen><br></iframe>
+    </div>
+</body>
+
+<script>
+    const toggleBtn = document.querySelector('.toggle_btn')
+    const toggleBtnIcon = document.querySelector('.toggle_btn i')
+    const dropDownMenu = document.querySelector('.dropdown_menu')
+
+    toggleBtn.onclick = function () {
+        dropDownMenu.classList.toggle('open')
+        const isOpen = dropDownMenu.classList.contains('open')
+
+        toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+    }
+
+</script>
+
+</html>

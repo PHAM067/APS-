@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+    <link rel="stylesheet" href="assets/css/aps.css">
+
+    <title>Sustentabilidade Eletronica</title>
+
+</head>
+
+<body class="gradient">
+    <div class="home">
+        <header>
+            <div class="navbar">
+                <div class="logo"><img src="assets/img/logo.png" alt="Logo">
+                </div>
+
+                <ul class="links">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="aps2.html">Sobre Nós</a></li>
+                    <li><a href="indexservicos.html">Serviços</a></li>
+                    <li><a href="indexservicos.html">Sobre o Grupo</a></li>
+                    <li><a href="videoaps.html">Vídeo</a></li>
+
+                </ul>
+                <a href="contato_aps.html" class="action_btn">Comentários</a>
+                <div class="toggle_btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+
+            <div class="dropdown_menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="services">Services</a></li>
+                <li><a href="sobreogrupo.html">Sobre o grupo</a></li>
+                <li><a href="videoaps.html">Vídeo</a></li>
+                <li> <a href="contato_aps.html" class="action_btn">Comentários</a></li>
+            </div>
+        </header>
+    </div>
+
+    <div class="container">
+        <img src="assets/img/image1.png" alt="image">
+    </div>
+
+    <div class="conteudo">
+        <div class="about">
+            <h2>Sobre nós</h2>
+            <p>Bem-vindo ao nosso site, somos um grupo de estudantes que estamos começando um projeto de sustentabilida
+                e reciclagem de componentes eletronicos.<br><br>
+
+                Em um mundo onde a tecnologia avança a passos largos, a questão da sustentabilidade tornou-se
+                imperativa. Nós reconhecemos a importância de preservar nosso planeta para as gerações futuras, e é por
+                isso que nos dedicamos à reciclagem de componentes eletrônicos.<br><br>
+
+                Estamos trabalhando nesse site, para que você saiba a importância de descartar componetes eletronicos da
+                maneira certa e mostrar para você aonde pode-se ser descartado esse lixo da maneira mais segura
+                possivel<br><br>
+
+                Mas nosso compromisso não termina quando o último componente é reciclado. Nós nos esforçamos para educar
+                e conscientizar, promovendo práticas sustentáveis em toda a indústria eletrônica. Acreditamos que, ao
+                liderar pelo exemplo, podemos inspirar mudanças significativas em direção a um futuro mais verde e
+                sustentável.<br><br>
+
+                Junte-se a nós nesta jornada de inovação e responsabilidade ambiental. Juntos, podemos construir um
+                mundo onde a tecnologia e a sustentabilidade andam de mãos dadas, onde cada componente eletrônico tem
+                uma segunda chance de fazer a diferença. O futuro está nas nossas mãos, e nós estamos prontos para
+                moldá-lo, componente por componente.</p>
+
+            <p><a href="contato_aps.html"><u>Clique aqui e se cadastre para receber mais atualizações.</u></a></p>
+        </div>
+    </div>
+
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+        }
+
+    </script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

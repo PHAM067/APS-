@@ -1,0 +1,142 @@
+* {
+    margin: 1px;
+    padding: 1px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+}
+
+body {
+    background-color: rgb(140, 213, 29);
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+    color: white;
+}
+
+p{
+    font-size: large;
+}
+
+.container {
+    padding: 10px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .container .group {
+    padding: 8px ;
+    margin: 8px;
+  }
+  
+  input[type="checkbox"] {
+    display: none;
+  }
+  
+  label {
+    position: relative;
+  }
+  
+  label::before {
+    content: "";
+    background: url("check-circle.svg");
+    background-position: center;
+    background-size: contain;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: -44px;
+    top: -8px;
+  
+    transform: scale(0) rotateZ(180deg);
+    transition: all 0.4s cubic-bezier(0.54, 0.01, 0, 1.49);
+  }
+  
+  input[type="checkbox"]:checked + label::before {
+    transform: scale(1) rotateZ(0deg);
+  }
+  
+  label::after {
+    content: "";
+    border: 2px solid #000000;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: -42px;
+    top: -6px;
+    border-radius: 50%;
+  }
+  
+
+
+section.Formulario {
+    padding: 80px 4%;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 40px;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    font-size: large;
+}
+
+form input,
+textarea {
+    width: 100%;
+    background-color: rgba(38, 42, 37, 0.932);
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: rgb(238, 243, 241);
+    font-size: 18px;
+}
+
+
+form textarea {
+    resize: none;
+    max-height: 200px;
+    margin-top: 20px;
+
+}
+
+form .btn-enviar {
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+
+
+form .btn-enviar input {
+    width: 120px;
+    background-color: rgb(0, 0, 0);
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+}
+
+select  {
+    width: 100%;
+    background-color: rgba(38, 42, 37, 0.932);
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: rgb(238, 243, 241);
+    font-size: 18px;
+}
+
+.gradient {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(325deg, #58d410, #39ff7b, #1af837e0, #39ff7b);
+    background-size: 100% 100%;
+}
